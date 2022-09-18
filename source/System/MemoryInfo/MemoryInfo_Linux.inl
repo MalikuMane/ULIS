@@ -182,7 +182,7 @@ void init_CPUCurrentlyUsedByProcess(){
 
 
 double CPUCurrentlyUsedByProcess() {
-    static int dummy = init_CPUCurrentlyUsedByProcess();
+    init_CPUCurrentlyUsedByProcess();
     struct tms timeSample;
     clock_t now;
     double percent;
